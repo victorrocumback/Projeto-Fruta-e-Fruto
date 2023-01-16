@@ -1,0 +1,43 @@
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 2rem;
+    background-color: #f9f9f9;
+}
+
+@media screen and (min-width: 0){
+    .cabecalho{
+        justify-content: center;
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho{
+        justify-content: space-between;
+        padding: 0 5rem;
+    }
+    
+}
+
+.menu__lista{
+    display: flex;
+    gap: 1.25rem;
+    list-style-type: none;
+}
+.menu__item{
+    text-decoration: none;
+    color: #808080;
+    text-transform: lowercase;
+}
+
+.menu__item:hover{
+    text-decoration: underline;
+}
+
+.menu__item--ativo{
+    color:#333333;
+    font-weight: bold;
+}
